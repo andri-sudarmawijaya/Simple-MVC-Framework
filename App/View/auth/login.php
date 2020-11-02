@@ -5,41 +5,48 @@
 @stop
 
 @section( 'content' )
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title">
-						<span class="glyphicon glyphicon-log-in padding-r10"></span>
-						Login
-					</div>
-				</div>
-				<div class="panel-body">
-					<form method="post" action="/auth/login" class="form-horizontal">
-						<div class="form-group">
-							<label for="email" class="control-label col-sm-3">E-Mail</label>
-							<div class="col-sm-9">
-								<input type="email" name="email" class="form-control" id="email" required validate autofocus=true>
-							</div>
-						</div>
+  <div class="container">
 
-						<div class="form-group">
-							<label for="password" class="control-label col-sm-3">Password</label>
-							<div class="col-sm-9">
-								<input type="password" name="password" class="form-control" id="password" required validate autofocus=true>
-							</div>
-						</div>
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
 
-						<div class="form-group">
-							
-							<div class="col-sm-9 col-sm-offset-3">
-								<button class="btn btn-success">Log In</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-				
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                  </div>
+                  <form class="user" method="post">
+                    <div class="form-group">
+                      <input type="email" name ="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <hr>
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+                    <button class="btn btn-success btn-block">Log In</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
 @stop

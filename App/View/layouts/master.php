@@ -37,7 +37,6 @@
 </body>
 	{!! $this->url->htmlScript( 'jquery/jquery.min.js' ) !!}
 	{!! $this->url->htmlScript( 'jquery-easing/jquery.easing.min.js' ) !!}
-	{!! $this->url->htmlScript( 'bootstrap/js/bootstrap.min.js' ) !!}
 	{!! $this->url->htmlScript( 'bootstrap/js/bootstrap.bundle.min.js' ) !!}
 	{!! $this->url->htmlScript( 'sb-admin-2.min.js' ) !!}
 	<script>

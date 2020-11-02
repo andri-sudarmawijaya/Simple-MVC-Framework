@@ -1,5 +1,5 @@
 <div class="table-responsive">
-	<table class="table table-hover table-stripped table-borderedw">
+  <table class="table table-bordered table-hover table-stripped table-borderedw" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
 				<th class="col-xs-1">#</th>
