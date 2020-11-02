@@ -1,15 +1,12 @@
-<footer id="footer" class="hidden-print text-center">
-	<div class="col-sm-6">
-		Developed By Ahmed Saad &copy; 2012-2016<br />
-		<small>a7mad.sa3d.2014@gmail.com</small><br />
-		<cite title="telephone">Tel: +2  01011772100</cite>
-	</div>
-	<div class="col-sm-6">
-	
-		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-	</div>
-
+<!-- Footer -->
+<footer id="footer" class="hidden-print text-center sticky-footer bg-dark">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span>Copyright &copy; Your Website 2020</span>
+    </div>
+  </div>
 </footer>
+<!-- End of Footer -->
 
 <!-- Foot Scripts -->
 <script type="text/javascript">
