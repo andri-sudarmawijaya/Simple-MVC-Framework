@@ -6,7 +6,7 @@
 
 @section( 'styles' )
 	<link rel="stylesheet" type="text/css" href="/assets/css/rcswitcher.min.css">
-@stop
+@stopp
 
 @section( 'scripts' )
 	<script src="/assets/js/rcswitcher.min.js"></script>
@@ -38,11 +38,11 @@
 						<label for="username" class="control-label col-sm-3 col-lg-2">User Name</label>
 						<div class="col-sm-9 col-lg-10">
 							<input type="text" class="form-control" id="username" value="{{ $this->old( 'username' ) }}" name="username" required minLength="3" autocomplete="off">
-							<? if( $this->errors->has('username') ) : ?>
+							<?php if( $this->errors->has('username') ) : ?>
 								<p class="help-block">
 									{{ $this->errors->first( 'username' ) }}
 								</p>
-							<? endif; ?>
+							<?php endif; ?>
 						</div>
 					</div>
 
@@ -50,11 +50,11 @@
 						<label for="user-email" class="control-label col-sm-3 col-lg-2">E-Mail</label>
 						<div class="col-sm-9 col-lg-10">
 							<input type="email" class="form-control" id="user-email" value="{{ $this->old( 'email' ) }}" name="email" required autocomplete="off">
-							<? if( $this->errors->has('email') ) : ?>
+							<?php if( $this->errors->has('email') ) : ?>
 								<p class="help-block">
 									{{ $this->errors->first( 'email' ) }}
 								</p>
-							<? endif; ?>
+							<?php endif; ?>
 						</div>
 					</div>
 
@@ -62,11 +62,11 @@
 						<label for="user-password" class="control-label col-sm-3 col-lg-2">Password</label>
 						<div class="col-sm-9 col-lg-10">
 							<input type="password" class="form-control" id="user-password" value="" name="password" required autocomplete="off">
-							<? if( $this->errors->has('password') ) : ?>
+							<?php if( $this->errors->has('password') ) : ?>
 								<p class="help-block">
 									{{ $this->errors->first( 'password' ) }}
 								</p>
-							<? endif; ?>
+							<?php endif; ?>
 						</div>
 					</div>
 

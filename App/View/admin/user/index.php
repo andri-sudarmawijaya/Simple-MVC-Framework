@@ -21,13 +21,13 @@
 			</div>
 		</div>
 
-		<? if( $this->users ): ?>
+		<?php if( $this->users ): ?>
 			@include( 'admin.user.includes.table' )
-		<? else: ?>
+		<?php else: ?>
 			<div class="panel-body">
 				<h3>No Users</h3>	
 			</div>
-		<? endif; ?>
+		<?php endif; ?>
 		
 	</div>
 @stop

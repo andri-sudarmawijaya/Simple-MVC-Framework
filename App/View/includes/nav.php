@@ -16,30 +16,30 @@
 			
 			<ul class="nav navbar-nav navbar-right">
 				
-				<? if( $this->session->isLoggedIn() ): ?>
+				<?php if( $this->session->isLoggedIn() ): ?>
 					<li>
 						<a href="/auth/logout">
 							<span class="glyphicon glyphicon-log-out padding-r5"></span>
 							Logout
 						</a>
 					</li>
-					<? if( $this->session->user->admin ): ?>
+					<?php if( $this->session->user->admin ): ?>
 						<li>
 							<a href="/admin">
 								<span class="glyphicon glyphicon-cog padding-r5"></span>
 								Admin
 							</a>
 						</li>
-					<? endif; ?>
+					<?php endif; ?>
 
-				<? else: ?>
+				<?php else: ?>
 					<li>
 						<a href="/auth/login">
 							<span class="glyphicon glyphicon-log-in padding-r5"></span>
 							Login
 						</a>
 					</li>
-				<? endif; ?>
+				<?php endif; ?>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

@@ -1,4 +1,4 @@
-<? if( $this->notification ): ?>
+<?php if( $this->notification ): ?>
 	
 	<div class="container">
 		<div class="row">
@@ -12,4 +12,4 @@
 		</div>
 	</div>
 	
-<? endif; ?>
+<?php endif; ?>

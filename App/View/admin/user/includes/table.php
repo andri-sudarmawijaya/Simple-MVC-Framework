@@ -10,25 +10,25 @@
 			</tr>
 		</thead>
 		<tbody>
-			<? foreach( $this->users as $i=>$user ): ?>
+			<?php foreach( $this->users as $i=>$user ): ?>
 				<tr>
-					<td><? echo $i; ?></td>
-					<td><? echo $user->username; ?></td>
-					<td><? echo $user->email; ?></td>
-					<td><? echo $user->admin ? 1 : 0; ?></td>
+					<td><?php echo $i; ?></td>
+					<td><?php echo $user->username; ?></td>
+					<td><?php echo $user->email; ?></td>
+					<td><?php echo $user->admin ? 1 : 0; ?></td>
 					<td class="text-right">
-						<a href="/admin/user/<? echo $user->id; ?>" class="no-decoration " data-toggle="tooltip" title="Show">
+						<a href="/admin/user/<?php echo $user->id; ?>" class="no-decoration " data-toggle="tooltip" title="Show">
 							<span class="glyphicon glyphicon-user"></span>
 						</a>
-						<a href="/admin/user/edit/<? echo $user->id; ?>" class="no-decoration margin-0-10" data-toggle="tooltip" title="Edit">
+						<a href="/admin/user/edit/<?php echo $user->id; ?>" class="no-decoration margin-0-10" data-toggle="tooltip" title="Edit">
 							<span class="glyphicon glyphicon-edit"></span>
 						</a>
-						<a href="/admin/user/delete/<? echo $user->id; ?>" class="no-decoration " data-toggle="tooltip" title="Delete">
+						<a href="/admin/user/delete/<?php echo $user->id; ?>" class="no-decoration " data-toggle="tooltip" title="Delete">
 							<span class="glyphicon glyphicon-trash text-danger"></span>
 						</a>
 					</td>
 				</tr>
-			<? endforeach; ?>
+			<?php endforeach; ?>
 		</tbody>
 	</table>
 </div>

@@ -9,8 +9,8 @@
 
 
 return [
-	'db_hostname' 	=> 'simple-framework.dev',
-	'db_name' 		=> 'simple-mvc',
+	'db_hostname' 	=> 'localhost',
+	'db_name' 		=> 'simple_mvc_bs4',
 	'db_username' 	=> 'root',
-	'db_password' 	=> 'root',
+	'db_password' 	=> '',
 ];

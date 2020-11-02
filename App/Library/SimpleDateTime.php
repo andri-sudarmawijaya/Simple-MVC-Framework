@@ -86,7 +86,7 @@ class SimpleDateTime extends DateTime
 	 * @return SimpleDateTime urrent Instance
 	 * 
 	 */
-	public function setTime( $houre, $minute, $second = 0 )
+	public function setTime( $houre, $minute, $second = NULL , $microseconds = NULL )
 	{
 		if( !is_numeric( $houre ) || !is_numeric( $minute ) || !is_numeric( $second ) )
 			throw new Exception( "Date::setTime() excpects three numeric arguments the first two are requird and the third are optional, there are 'houre, minute, second' in the same order" );
