@@ -19,26 +19,45 @@
 	@yield( 'styles' )
 
 </head>
-	<body>
-		@include( 'admin.includes.nav' )
+	<body id="page-top">
+  
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      @include( 'admin.includes.sidebar' )
+      
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
 
-		@include( 'admin.includes.notification' )
+        <!-- Main Content -->
+        <div id="content">
 
-		<div class="container">
-			@yield( 'content' )
-		</div>
+          @include( 'admin.includes.nav' )
 
-		@include( 'admin.includes.footer' )
+          @include( 'admin.includes.notification' )
 
-    {!! $this->url->htmlScript( 'jquery/jquery.min.js' ) !!}
-    {!! $this->url->htmlScript( 'jquery-easing/jquery.easing.min.js' ) !!}
-    {!! $this->url->htmlScript( 'bootstrap/js/bootstrap.bundle.min.js' ) !!}
-    {!! $this->url->htmlScript( 'sb-admin-2.min.js' ) !!}
+          <div class="container">
+            @yield( 'content' )
+          </div>
+          
+        </div>
+        
+      </div>
+      <!-- End Content Wrapper -->
+      
+    </div>  
+    <!-- End Page Wrapper -->
 
-    <script>
-      var baseUrl = '{{ $this->url->to('/') }}';
-    </script>
-		<!-- Foot Scripts -->
-		@yield( 'scripts' )
+      @include( 'admin.includes.footer' )
+
+      {!! $this->url->htmlScript( 'jquery/jquery.min.js' ) !!}
+      {!! $this->url->htmlScript( 'jquery-easing/jquery.easing.min.js' ) !!}
+      {!! $this->url->htmlScript( 'bootstrap/js/bootstrap.bundle.min.js' ) !!}
+      {!! $this->url->htmlScript( 'sb-admin-2.min.js' ) !!}
+
+      <script>
+        var baseUrl = '{{ $this->url->to('/') }}';
+      </script>
+      <!-- Foot Scripts -->
+      @yield( 'scripts' )
 	</body>
 </html>
