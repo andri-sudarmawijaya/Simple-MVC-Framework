@@ -40,14 +40,15 @@
           </div>
           
         </div>
+        <!-- End of Main Content -->
+        
+        @include( 'admin.includes.footer' )
         
       </div>
-      <!-- End Content Wrapper -->
+    <!-- End of Content Wrapper -->
       
     </div>  
     <!-- End Page Wrapper -->
-
-      @include( 'admin.includes.footer' )
 
       {!! $this->url->htmlScript( 'jquery/jquery.min.js' ) !!}
       {!! $this->url->htmlScript( 'jquery-easing/jquery.easing.min.js' ) !!}

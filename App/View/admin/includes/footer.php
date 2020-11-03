@@ -1,12 +1,15 @@
-<!-- Footer -->
-<footer id="footer" class="hidden-print text-center sticky-footer bg-dark">
-  <div class="container my-auto">
-    <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Your Website 2020</span>
-    </div>
-  </div>
-</footer>
-<!-- End of Footer -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+              Developed By Ahmed Saad &copy; 2012-2016<br />
+              <small>a7mad.sa3d.2014@gmail.com</small><br />
+              <cite title="telephone">Tel: +2  01011772100</cite>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
 
 <!-- Foot Scripts -->
 <script type="text/javascript">
